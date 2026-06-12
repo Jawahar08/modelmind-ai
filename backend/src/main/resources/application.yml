@@ -12,6 +12,11 @@ spring:
   flyway:
     enabled: true
     locations: classpath:db/migration
+application:
+  security:
+    jwt:
+      secret-key: 7f8e9d4c3b2a1f9876543210abcdef1234567890abcdef1234567890abcdef
+      expiration: 86400000
 
 server:
   port: 8080
