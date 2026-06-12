@@ -9,7 +9,7 @@
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-blue?style=for-the-badge\&logo=postgresql)
 ![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)
 
-# ModelMind AI
+# SchemaForge Ai
 
 ### Transform Plain English Into Production-Ready Database Architectures
 
