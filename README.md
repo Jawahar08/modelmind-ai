@@ -1,4 +1,4 @@
-# 🧠 ModelMind AI
+# 🧠 SchemaForge Ai
 
 <div align="center">
 
