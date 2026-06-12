@@ -260,3 +260,5 @@ MIT License — see [LICENSE](LICENSE) for details.
 <div align="center">
   <p>Built with ❤️ using <a href="https://www.anthropic.com">Anthropic Claude</a></p>
 </div>
+#   m o d e l m i n d - a i  
+ 
