@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 4%;
+    --foreground: 240 5% 92%;
+    --card: 240 10% 7%;
+    --card-foreground: 240 5% 92%;
+    --border: 240 8% 18%;
+    --input: 240 8% 12%;
+    --primary: 252 87% 70%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 8% 14%;
+    --secondary-foreground: 240 5% 70%;
+    --muted: 240 8% 12%;
+    --muted-foreground: 240 5% 45%;
+    --accent: 252 87% 70%;
+    --accent-foreground: 0 0% 100%;
+    --ring: 252 87% 70%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-background text-foreground font-sans;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track { background: hsl(var(--background)); }
+  ::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 2px; }
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(17, 17, 27, 0.8);
+    backdrop-filter: blur(12px);
+  }
+  .grid-bg {
+    background-image:
+      linear-gradient(hsl(240 8% 18%) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(240 8% 18%) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
