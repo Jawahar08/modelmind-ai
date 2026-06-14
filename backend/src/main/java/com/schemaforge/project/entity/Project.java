@@ -23,6 +23,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
+
 @Getter
 @Setter
 @Entity
@@ -55,10 +58,9 @@ public class Project extends BaseEntity {
     @Builder.Default
     private ProjectStatus status = ProjectStatus.ACTIVE;
 
-    @Convert(converter = StringListJsonConverter.class)
-@Column(name = "tags", nullable = false)
-@Builder.Default
-private List<String> tags = Collections.emptyList();
+   @JdbcTypeCode(SqlTypes.JSON)
+@Column(name = "tags", columnDefinition = "jsonb", nullable = false)
+private List<String> tags;
 
     @Column(name = "deleted_at")
     private Instant deletedAt;
